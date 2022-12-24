@@ -1,0 +1,140 @@
+.header{
+    height:60px;
+    width:1490px;
+    display: flex;
+    padding: 1px 3px;
+    flex:56%;
+    background-color: black;
+    position:sticky;
+    justify-content: space-evenly;  
+}
+.header-logo{
+    height:60px;
+    width:200px;
+    object-fit: contain;
+   
+}
+.header_search{
+    width: 400px;
+    display: flex;
+    flex-grow:1;
+    align-items: center;
+    border-color:grey ;
+    border-radius:0px;
+
+}
+.header_searchIcon2{
+    padding:5px;
+    height:30px;
+    background-color:grey;
+    border-radius: 10%;
+    margin-right: 0%;
+}
+.header_nav{
+    display: flex;
+    justify-content: center ;
+    padding:15px;
+}
+.header_option{
+    display:flex;
+    flex-direction:row;
+    margin-left:5px;
+    margin-right:10px;
+    color:grey;
+    font-size: 16px;
+    font-weight:600px;
+
+}
+.header_optionBasket{
+    display: flex;
+    align-items: center;
+    color:grey;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size:45px;
+    line-height: 56px;
+    color:black
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+h4{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: aquamarine;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin:40px 0;
+}
+
+body{
+    width: 100px;
+}
+
+#header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+    background:white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+#navbar{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+    position: relative;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:grey;
+    transition: 0.8s ease;
+   
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color:grey;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{  /*this is for underline at every word*/
+    content:"";
+    width:50%;
+    height:1px;
+    background: pink;
+    position: absolute;/*inside child needs to be declared as relative*/
+    bottom:-4px;
+    left: 20px;
+}
